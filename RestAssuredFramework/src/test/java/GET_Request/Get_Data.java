@@ -1,6 +1,7 @@
 package GET_Request;
 
 import org.testng.annotations.BeforeTest;
+import io.restassured.*;
 import org.testng.annotations.Test;
 
 import Assertion.Assertions_types;
@@ -26,6 +27,8 @@ public class Get_Data {
 	 @Test
 	    public void TC01_GetWeatherDetailsForValidCity()  {
 	     
+		 try
+		 {
 	        Response response = httpRequest.get("/Amman");
 	        Assertions_types.checkStatusIs200(response);
 	        Assertions_types.checkStatusLine(response);
@@ -34,25 +37,46 @@ public class Get_Data {
 	   	    
 	   	    String contentType = response.header("Content-Type");
 		    System.out.println("Content-Type value: " + contentType);
+		 }
+		 catch(Exception ex)
+			{
+				ex.printStackTrace();
+			}
 	    }
-	 
-	 
+	
+	
 	@Test
 	 public void TC02_GetWeatherDetailsForInvalidCity()
 	 {   
+		try
+		{
 		 Response response = httpRequest.get("/233434534");
 		 Assertions_types.checkStatusIs200(response);
 	     Assertions_types.checkStatusLine(response);
+		}
 		
+		catch(Exception ex)
+		{
+			ex.printStackTrace();
+		}
 	
 	 }
 	
 	@Test
 	 public void TC03_GetWeatherDetailsForEmptyCity()
 	 {   
-		 Response response = httpRequest.get("/");
-		 Assertions_types.checkStatusIs200(response);
-	     Assertions_types.checkStatusLine(response);
+		 try
+		 {
+			 Response response = httpRequest.get("/");
+			 Assertions_types.checkStatusIs200(response);
+		     Assertions_types.checkStatusLine(response);
+		 }
+		 
+		 catch(Exception ex)
+			{
+				ex.printStackTrace();
+			}
+		 
 		
 	 }
 }
