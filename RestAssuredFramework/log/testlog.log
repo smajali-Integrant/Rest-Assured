@@ -1,0 +1,2 @@
+2020-05-29 23:46:23,965 - org.apache.http.impl.client.DefaultHttpClient -INFO - I/O exception (java.net.SocketException) caught when processing request to {}->http://restapi.demoqa.com:80: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+2020-05-29 23:46:23,970 - org.apache.http.impl.client.DefaultHttpClient -INFO - Retrying request to {}->http://restapi.demoqa.com:80

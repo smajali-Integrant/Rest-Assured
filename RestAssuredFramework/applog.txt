@@ -1,0 +1,154 @@
+DEBUG   2020-05-30 00:42:48,721 [main] org.apache.http.impl.conn.BasicClientConnectionManager  - Get connection for route {}->http://restapi.demoqa.com:80
+DEBUG   2020-05-30 00:42:48,759 [main] org.apache.http.impl.conn.DefaultClientConnectionOperator  - Connecting to restapi.demoqa.com:80
+DEBUG   2020-05-30 00:42:49,034 [main] org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: ignoreCookies
+DEBUG   2020-05-30 00:42:49,036 [main] org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+DEBUG   2020-05-30 00:42:49,036 [main] org.apache.http.client.protocol.RequestTargetAuthentication  - Target auth state: UNCHALLENGED
+DEBUG   2020-05-30 00:42:49,037 [main] org.apache.http.client.protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
+DEBUG   2020-05-30 00:42:49,038 [main] org.apache.http.impl.client.DefaultHttpClient  - Attempt 1 to execute request
+DEBUG   2020-05-30 00:42:49,038 [main] org.apache.http.impl.conn.DefaultClientConnection  - Sending request: GET /utilities/weather/city/Amman HTTP/1.1
+DEBUG   2020-05-30 00:42:49,038 [main] org.apache.http.wire  -  >> "GET /utilities/weather/city/Amman HTTP/1.1[\r][\n]"
+DEBUG   2020-05-30 00:42:49,040 [main] org.apache.http.wire  -  >> "Accept: */*[\r][\n]"
+DEBUG   2020-05-30 00:42:49,040 [main] org.apache.http.wire  -  >> "Host: restapi.demoqa.com[\r][\n]"
+DEBUG   2020-05-30 00:42:49,040 [main] org.apache.http.wire  -  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG   2020-05-30 00:42:49,041 [main] org.apache.http.wire  -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/13.0.1)[\r][\n]"
+DEBUG   2020-05-30 00:42:49,041 [main] org.apache.http.wire  -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+DEBUG   2020-05-30 00:42:49,041 [main] org.apache.http.wire  -  >> "[\r][\n]"
+DEBUG   2020-05-30 00:42:49,041 [main] org.apache.http.headers  - >> GET /utilities/weather/city/Amman HTTP/1.1
+DEBUG   2020-05-30 00:42:49,041 [main] org.apache.http.headers  - >> Accept: */*
+DEBUG   2020-05-30 00:42:49,042 [main] org.apache.http.headers  - >> Host: restapi.demoqa.com
+DEBUG   2020-05-30 00:42:49,042 [main] org.apache.http.headers  - >> Connection: Keep-Alive
+DEBUG   2020-05-30 00:42:49,042 [main] org.apache.http.headers  - >> User-Agent: Apache-HttpClient/4.5.3 (Java/13.0.1)
+DEBUG   2020-05-30 00:42:49,042 [main] org.apache.http.headers  - >> Accept-Encoding: gzip,deflate
+DEBUG   2020-05-30 00:42:49,459 [main] org.apache.http.wire  -  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG   2020-05-30 00:42:49,462 [main] org.apache.http.wire  -  << "Server: nginx[\r][\n]"
+DEBUG   2020-05-30 00:42:49,462 [main] org.apache.http.wire  -  << "Date: Fri, 29 May 2020 21:42:54 GMT[\r][\n]"
+DEBUG   2020-05-30 00:42:49,463 [main] org.apache.http.wire  -  << "Content-Type: application/json[\r][\n]"
+DEBUG   2020-05-30 00:42:49,463 [main] org.apache.http.wire  -  << "Content-Length: 163[\r][\n]"
+DEBUG   2020-05-30 00:42:49,463 [main] org.apache.http.wire  -  << "Connection: keep-alive[\r][\n]"
+DEBUG   2020-05-30 00:42:49,463 [main] org.apache.http.wire  -  << "Vary: Accept-Encoding[\r][\n]"
+DEBUG   2020-05-30 00:42:49,463 [main] org.apache.http.wire  -  << "Content-Encoding: gzip[\r][\n]"
+DEBUG   2020-05-30 00:42:49,464 [main] org.apache.http.wire  -  << "Cache-Control: max-age=0[\r][\n]"
+DEBUG   2020-05-30 00:42:49,464 [main] org.apache.http.wire  -  << "Expires: Fri, 29 May 2020 21:42:54 GMT[\r][\n]"
+DEBUG   2020-05-30 00:42:49,464 [main] org.apache.http.wire  -  << "Host-Header: 192fc2e7e50945beb8231a492d6a8024[\r][\n]"
+DEBUG   2020-05-30 00:42:49,464 [main] org.apache.http.wire  -  << "Access-Control-Allow-Origin: *[\r][\n]"
+DEBUG   2020-05-30 00:42:49,464 [main] org.apache.http.wire  -  << "alt-svc: quic=":443"; ma=86400; v="43,39"[\r][\n]"
+DEBUG   2020-05-30 00:42:49,465 [main] org.apache.http.wire  -  << "Host-Header: 5d77dd967d63c3104bced1db0cace49c[\r][\n]"
+DEBUG   2020-05-30 00:42:49,465 [main] org.apache.http.wire  -  << "X-Proxy-Cache: MISS[\r][\n]"
+DEBUG   2020-05-30 00:42:49,465 [main] org.apache.http.wire  -  << "[\r][\n]"
+DEBUG   2020-05-30 00:42:49,466 [main] org.apache.http.impl.conn.DefaultClientConnection  - Receiving response: HTTP/1.1 200 OK
+DEBUG   2020-05-30 00:42:49,466 [main] org.apache.http.headers  - << HTTP/1.1 200 OK
+DEBUG   2020-05-30 00:42:49,467 [main] org.apache.http.headers  - << Server: nginx
+DEBUG   2020-05-30 00:42:49,467 [main] org.apache.http.headers  - << Date: Fri, 29 May 2020 21:42:54 GMT
+DEBUG   2020-05-30 00:42:49,467 [main] org.apache.http.headers  - << Content-Type: application/json
+DEBUG   2020-05-30 00:42:49,467 [main] org.apache.http.headers  - << Content-Length: 163
+DEBUG   2020-05-30 00:42:49,467 [main] org.apache.http.headers  - << Connection: keep-alive
+DEBUG   2020-05-30 00:42:49,467 [main] org.apache.http.headers  - << Vary: Accept-Encoding
+DEBUG   2020-05-30 00:42:49,467 [main] org.apache.http.headers  - << Content-Encoding: gzip
+DEBUG   2020-05-30 00:42:49,467 [main] org.apache.http.headers  - << Cache-Control: max-age=0
+DEBUG   2020-05-30 00:42:49,468 [main] org.apache.http.headers  - << Expires: Fri, 29 May 2020 21:42:54 GMT
+DEBUG   2020-05-30 00:42:49,468 [main] org.apache.http.headers  - << Host-Header: 192fc2e7e50945beb8231a492d6a8024
+DEBUG   2020-05-30 00:42:49,468 [main] org.apache.http.headers  - << Access-Control-Allow-Origin: *
+DEBUG   2020-05-30 00:42:49,468 [main] org.apache.http.headers  - << alt-svc: quic=":443"; ma=86400; v="43,39"
+DEBUG   2020-05-30 00:42:49,468 [main] org.apache.http.headers  - << Host-Header: 5d77dd967d63c3104bced1db0cace49c
+DEBUG   2020-05-30 00:42:49,468 [main] org.apache.http.headers  - << X-Proxy-Cache: MISS
+DEBUG   2020-05-30 00:42:49,477 [main] org.apache.http.impl.client.DefaultHttpClient  - Connection can be kept alive indefinitely
+DEBUG   2020-05-30 00:42:49,509 [main] io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsing response as: application/json
+DEBUG   2020-05-30 00:42:49,510 [main] org.apache.http.wire  -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3]M[0x8e][0xc1][\n]"
+DEBUG   2020-05-30 00:42:49,510 [main] org.apache.http.wire  -  << "[0xc2]0[0x10]D[0xef][0xfd][0x8a]%g[0x11][0xab][0xa2][0xe2]M[0xcc]A[0xf0]"([0xf4]\[0x92][0xd1].4i[0xd9]&[0x88][0x88][0xff]nC[q[0x8f]3[0x8f][0xb7][0xf3][0xce][0xa8]?u[0xe4][0xf0]R{R[0x7][0xe7]J[0xaf]fCx[0x83]k!e[0x88][0x82][0xd4][0xe5]+[0xd2]x[0x8]@[0x6]u[0xc7][0xb1][0x9b][0xb8]StlG[0xc1]vC[0x17][0x88][0x81][0xf]S[[0xa0][0xc][0x15]D[0xa3]3[0xc2]m[0xe0][0xc6]'[0xee][0x8e]'[0x99][0xba][0x89][0xf6]g)[0xd8][0xdb]k[0xb][0xd8]T[0xaf][0xe7]9[0x9d][0x1d][0xf5][0xef][0xa9]j[0xa2][0xfc]3[0x9a][0x5]&i[0x86]1[0x89]^[0xee][0x16][0xe3]4[0x95]}[0xbe][0x4][0xa9]^Z[0xd2][0x0][0x0][0x0]"
+DEBUG   2020-05-30 00:42:49,511 [main] io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+DEBUG   2020-05-30 00:42:49,600 [main] org.apache.http.impl.conn.BasicClientConnectionManager  - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@6fd5717c
+DEBUG   2020-05-30 00:42:49,600 [main] org.apache.http.impl.conn.BasicClientConnectionManager  - Connection can be kept alive indefinitely
+DEBUG   2020-05-30 00:42:49,672 [main] org.apache.http.impl.conn.BasicClientConnectionManager  - Get connection for route {}->http://restapi.demoqa.com:80
+DEBUG   2020-05-30 00:42:49,674 [main] org.apache.http.impl.conn.DefaultClientConnectionOperator  - Connecting to restapi.demoqa.com:80
+DEBUG   2020-05-30 00:42:49,892 [main] org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: ignoreCookies
+DEBUG   2020-05-30 00:42:49,892 [main] org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+DEBUG   2020-05-30 00:42:49,892 [main] org.apache.http.client.protocol.RequestTargetAuthentication  - Target auth state: UNCHALLENGED
+DEBUG   2020-05-30 00:42:49,892 [main] org.apache.http.client.protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
+DEBUG   2020-05-30 00:42:49,892 [main] org.apache.http.impl.client.DefaultHttpClient  - Attempt 1 to execute request
+DEBUG   2020-05-30 00:42:49,892 [main] org.apache.http.impl.conn.DefaultClientConnection  - Sending request: GET /utilities/weather/city/s/233434534 HTTP/1.1
+DEBUG   2020-05-30 00:42:49,892 [main] org.apache.http.wire  -  >> "GET /utilities/weather/city/s/233434534 HTTP/1.1[\r][\n]"
+DEBUG   2020-05-30 00:42:49,893 [main] org.apache.http.wire  -  >> "Accept: */*[\r][\n]"
+DEBUG   2020-05-30 00:42:49,893 [main] org.apache.http.wire  -  >> "Host: restapi.demoqa.com[\r][\n]"
+DEBUG   2020-05-30 00:42:49,893 [main] org.apache.http.wire  -  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG   2020-05-30 00:42:49,893 [main] org.apache.http.wire  -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/13.0.1)[\r][\n]"
+DEBUG   2020-05-30 00:42:49,893 [main] org.apache.http.wire  -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+DEBUG   2020-05-30 00:42:49,893 [main] org.apache.http.wire  -  >> "[\r][\n]"
+DEBUG   2020-05-30 00:42:49,893 [main] org.apache.http.headers  - >> GET /utilities/weather/city/s/233434534 HTTP/1.1
+DEBUG   2020-05-30 00:42:49,893 [main] org.apache.http.headers  - >> Accept: */*
+DEBUG   2020-05-30 00:42:49,893 [main] org.apache.http.headers  - >> Host: restapi.demoqa.com
+DEBUG   2020-05-30 00:42:49,893 [main] org.apache.http.headers  - >> Connection: Keep-Alive
+DEBUG   2020-05-30 00:42:49,893 [main] org.apache.http.headers  - >> User-Agent: Apache-HttpClient/4.5.3 (Java/13.0.1)
+DEBUG   2020-05-30 00:42:49,893 [main] org.apache.http.headers  - >> Accept-Encoding: gzip,deflate
+DEBUG   2020-05-30 00:42:50,308 [main] org.apache.http.wire  -  << "HTTP/1.1 400 Bad Request[\r][\n]"
+DEBUG   2020-05-30 00:42:50,309 [main] org.apache.http.wire  -  << "Server: nginx[\r][\n]"
+DEBUG   2020-05-30 00:42:50,309 [main] org.apache.http.wire  -  << "Date: Fri, 29 May 2020 21:42:55 GMT[\r][\n]"
+DEBUG   2020-05-30 00:42:50,309 [main] org.apache.http.wire  -  << "Content-Type: application/json[\r][\n]"
+DEBUG   2020-05-30 00:42:50,309 [main] org.apache.http.wire  -  << "Content-Length: 114[\r][\n]"
+DEBUG   2020-05-30 00:42:50,309 [main] org.apache.http.wire  -  << "Connection: keep-alive[\r][\n]"
+DEBUG   2020-05-30 00:42:50,309 [main] org.apache.http.wire  -  << "Vary: Accept-Encoding[\r][\n]"
+DEBUG   2020-05-30 00:42:50,309 [main] org.apache.http.wire  -  << "Content-Encoding: gzip[\r][\n]"
+DEBUG   2020-05-30 00:42:50,309 [main] org.apache.http.wire  -  << "Host-Header: 192fc2e7e50945beb8231a492d6a8024[\r][\n]"
+DEBUG   2020-05-30 00:42:50,310 [main] org.apache.http.wire  -  << "Access-Control-Allow-Origin: *[\r][\n]"
+DEBUG   2020-05-30 00:42:50,310 [main] org.apache.http.wire  -  << "[\r][\n]"
+DEBUG   2020-05-30 00:42:50,310 [main] org.apache.http.impl.conn.DefaultClientConnection  - Receiving response: HTTP/1.1 400 Bad Request
+DEBUG   2020-05-30 00:42:50,310 [main] org.apache.http.headers  - << HTTP/1.1 400 Bad Request
+DEBUG   2020-05-30 00:42:50,310 [main] org.apache.http.headers  - << Server: nginx
+DEBUG   2020-05-30 00:42:50,310 [main] org.apache.http.headers  - << Date: Fri, 29 May 2020 21:42:55 GMT
+DEBUG   2020-05-30 00:42:50,310 [main] org.apache.http.headers  - << Content-Type: application/json
+DEBUG   2020-05-30 00:42:50,310 [main] org.apache.http.headers  - << Content-Length: 114
+DEBUG   2020-05-30 00:42:50,310 [main] org.apache.http.headers  - << Connection: keep-alive
+DEBUG   2020-05-30 00:42:50,310 [main] org.apache.http.headers  - << Vary: Accept-Encoding
+DEBUG   2020-05-30 00:42:50,310 [main] org.apache.http.headers  - << Content-Encoding: gzip
+DEBUG   2020-05-30 00:42:50,311 [main] org.apache.http.headers  - << Host-Header: 192fc2e7e50945beb8231a492d6a8024
+DEBUG   2020-05-30 00:42:50,311 [main] org.apache.http.headers  - << Access-Control-Allow-Origin: *
+DEBUG   2020-05-30 00:42:50,311 [main] org.apache.http.impl.client.DefaultHttpClient  - Connection can be kept alive indefinitely
+DEBUG   2020-05-30 00:42:50,311 [main] io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsing response as: application/json
+DEBUG   2020-05-30 00:42:50,311 [main] org.apache.http.wire  -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0xab][0xe6]R[0x0][0x2]%[0xb7][0xc4][0xd2][0x9c][0x12][0xcf][0x14]%+ [0xd3]1[0xd4]'$[0xde][0xd3]/[0xc4]5[0xc8][0xcf][0xd1]GI[0x7][0xa2] [\r][0xa4][0x0]$[0xed][0x98][0xa7][0x90][0x99]W[0x92]Z[0x94][0x97][0x98][0xa3][0x90]ZT[0x94]_[0xa4][0x90][0x9f][0x9c]\Z[0x94][0x9a][0xa2]P[0x9e][0x91][0x99][0x93][0xaa]P[0x9c]ZT[0x96][0x99][0x9c][0x99][0x97][0xae]P[0x92][0x91][0xaa]P[0x94]ZX[0x9a]Z\[0xa2][0xc4]U[0xb][0x0][0xa3][0x93][0xd9][0xb4]i[0x0][0x0][0x0]"
+DEBUG   2020-05-30 00:42:50,311 [main] io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+DEBUG   2020-05-30 00:42:50,338 [main] org.apache.http.impl.conn.BasicClientConnectionManager  - Get connection for route {}->http://restapi.demoqa.com:80
+DEBUG   2020-05-30 00:42:50,338 [main] org.apache.http.impl.conn.DefaultClientConnectionOperator  - Connecting to restapi.demoqa.com:80
+DEBUG   2020-05-30 00:42:50,570 [main] org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: ignoreCookies
+DEBUG   2020-05-30 00:42:50,570 [main] org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+DEBUG   2020-05-30 00:42:50,571 [main] org.apache.http.client.protocol.RequestTargetAuthentication  - Target auth state: UNCHALLENGED
+DEBUG   2020-05-30 00:42:50,571 [main] org.apache.http.client.protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
+DEBUG   2020-05-30 00:42:50,571 [main] org.apache.http.impl.client.DefaultHttpClient  - Attempt 1 to execute request
+DEBUG   2020-05-30 00:42:50,571 [main] org.apache.http.impl.conn.DefaultClientConnection  - Sending request: GET /utilities/weather/city/ HTTP/1.1
+DEBUG   2020-05-30 00:42:50,571 [main] org.apache.http.wire  -  >> "GET /utilities/weather/city/ HTTP/1.1[\r][\n]"
+DEBUG   2020-05-30 00:42:50,571 [main] org.apache.http.wire  -  >> "Accept: */*[\r][\n]"
+DEBUG   2020-05-30 00:42:50,571 [main] org.apache.http.wire  -  >> "Host: restapi.demoqa.com[\r][\n]"
+DEBUG   2020-05-30 00:42:50,571 [main] org.apache.http.wire  -  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG   2020-05-30 00:42:50,572 [main] org.apache.http.wire  -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/13.0.1)[\r][\n]"
+DEBUG   2020-05-30 00:42:50,572 [main] org.apache.http.wire  -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+DEBUG   2020-05-30 00:42:50,572 [main] org.apache.http.wire  -  >> "[\r][\n]"
+DEBUG   2020-05-30 00:42:50,572 [main] org.apache.http.headers  - >> GET /utilities/weather/city/ HTTP/1.1
+DEBUG   2020-05-30 00:42:50,572 [main] org.apache.http.headers  - >> Accept: */*
+DEBUG   2020-05-30 00:42:50,572 [main] org.apache.http.headers  - >> Host: restapi.demoqa.com
+DEBUG   2020-05-30 00:42:50,572 [main] org.apache.http.headers  - >> Connection: Keep-Alive
+DEBUG   2020-05-30 00:42:50,572 [main] org.apache.http.headers  - >> User-Agent: Apache-HttpClient/4.5.3 (Java/13.0.1)
+DEBUG   2020-05-30 00:42:50,572 [main] org.apache.http.headers  - >> Accept-Encoding: gzip,deflate
+DEBUG   2020-05-30 00:42:50,911 [main] org.apache.http.wire  -  << "HTTP/1.1 400 Bad Request[\r][\n]"
+DEBUG   2020-05-30 00:42:50,911 [main] org.apache.http.wire  -  << "Server: nginx[\r][\n]"
+DEBUG   2020-05-30 00:42:50,912 [main] org.apache.http.wire  -  << "Date: Fri, 29 May 2020 21:42:56 GMT[\r][\n]"
+DEBUG   2020-05-30 00:42:50,912 [main] org.apache.http.wire  -  << "Content-Type: application/json[\r][\n]"
+DEBUG   2020-05-30 00:42:50,912 [main] org.apache.http.wire  -  << "Content-Length: 126[\r][\n]"
+DEBUG   2020-05-30 00:42:50,912 [main] org.apache.http.wire  -  << "Connection: keep-alive[\r][\n]"
+DEBUG   2020-05-30 00:42:50,912 [main] org.apache.http.wire  -  << "Vary: Accept-Encoding[\r][\n]"
+DEBUG   2020-05-30 00:42:50,912 [main] org.apache.http.wire  -  << "Content-Encoding: gzip[\r][\n]"
+DEBUG   2020-05-30 00:42:50,912 [main] org.apache.http.wire  -  << "Host-Header: 192fc2e7e50945beb8231a492d6a8024[\r][\n]"
+DEBUG   2020-05-30 00:42:50,912 [main] org.apache.http.wire  -  << "Access-Control-Allow-Origin: *[\r][\n]"
+DEBUG   2020-05-30 00:42:50,912 [main] org.apache.http.wire  -  << "[\r][\n]"
+DEBUG   2020-05-30 00:42:50,913 [main] org.apache.http.impl.conn.DefaultClientConnection  - Receiving response: HTTP/1.1 400 Bad Request
+DEBUG   2020-05-30 00:42:50,913 [main] org.apache.http.headers  - << HTTP/1.1 400 Bad Request
+DEBUG   2020-05-30 00:42:50,913 [main] org.apache.http.headers  - << Server: nginx
+DEBUG   2020-05-30 00:42:50,913 [main] org.apache.http.headers  - << Date: Fri, 29 May 2020 21:42:56 GMT
+DEBUG   2020-05-30 00:42:50,913 [main] org.apache.http.headers  - << Content-Type: application/json
+DEBUG   2020-05-30 00:42:50,913 [main] org.apache.http.headers  - << Content-Length: 126
+DEBUG   2020-05-30 00:42:50,913 [main] org.apache.http.headers  - << Connection: keep-alive
+DEBUG   2020-05-30 00:42:50,913 [main] org.apache.http.headers  - << Vary: Accept-Encoding
+DEBUG   2020-05-30 00:42:50,913 [main] org.apache.http.headers  - << Content-Encoding: gzip
+DEBUG   2020-05-30 00:42:50,913 [main] org.apache.http.headers  - << Host-Header: 192fc2e7e50945beb8231a492d6a8024
+DEBUG   2020-05-30 00:42:50,913 [main] org.apache.http.headers  - << Access-Control-Allow-Origin: *
+DEBUG   2020-05-30 00:42:50,913 [main] org.apache.http.impl.client.DefaultHttpClient  - Connection can be kept alive indefinitely
+DEBUG   2020-05-30 00:42:50,914 [main] io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsing response as: application/json
+DEBUG   2020-05-30 00:42:50,914 [main] org.apache.http.wire  -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0xab][0xe6]R[0x0][0x2]%[0xb7][0xc4][0xd2][0x9c][0x12][0xcf][0x14]%+ [0xd3]1[0xd4]'$[0xde][0xd3]/[0xcc][0xd1][0xc7][0xd3]%[0xde][0xdd]5$>[0xc8]50[0xd4]58DI[0x7][0xa2]6[\r][0xa4][0x16][0xa4][0xd2]3[0xaf],1'3E![0xbf]H[0xc1]7[0xb3][0xb8]83/][0x1][0xa8]\!%[0xb1]$QG[0xa1] '5[0xb1]8U!9[0xbf][0xa8](5[0xb9]D[0xa1]$#U[0xa1]([0xb5][0xb0]4[0xb5][0xb8]D[0x89][0xab][0x16][0x0][0xa7][0xbf][0x19]vv[0x0][0x0][0x0]"
+DEBUG   2020-05-30 00:42:50,914 [main] io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
