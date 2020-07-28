@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="GET_Request.Get_Data">
+      <class name="GET_Request.Request_Data">
         <methods>
-          <include name="TC03_GetWeatherDetailsForEmptyCity"/>
-          <include name="setup"/>
           <include name="TC02_GetWeatherDetailsForInvalidCity"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- GET_Request.Get_Data -->
+      </class> <!-- GET_Request.Request_Data -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
